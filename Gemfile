@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.1.3'
+gem 'bcrypt'
 gem 'sqlite3',  groups: %w(test development), require: false
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
