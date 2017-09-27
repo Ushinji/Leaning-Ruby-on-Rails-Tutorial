@@ -7,6 +7,9 @@ end
 
 gem 'rails', '~> 5.1.3'
 gem 'bcrypt'
+gem 'faker', '1.7.3'
+gem 'will_paginate', '3.1.5'
+gem 'bootstrap-will_paginate', '1.0.0'
 gem 'sqlite3',  groups: %w(test development), require: false
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
