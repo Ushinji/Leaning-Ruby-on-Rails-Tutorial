@@ -7,7 +7,8 @@ class MicropostsController < ApplicationController
       flash[:success] = "Micropost created!"
       redirect_to root_url
     else
-      render 'static_page/home'
+      @feed_items = []
+      render 'static_pages/home'
     end
   end
 
@@ -15,7 +16,7 @@ class MicropostsController < ApplicationController
   end
 
   private
-    def micropost_paramas
+    def micropost_params
       params.require(:micropost).permit(:content)
     end
 end
